@@ -16,7 +16,7 @@ This code will tell you that we can also make AI with LangChain that provides LL
 
 # Set up your OpenAI API key
 qcity = PromptTemplate.from_template("What is the capital of {place}")
-llm = OpenAI(temperature=0.3, openai_api_key = "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")
+llm = OpenAI(temperature=0.3, openai_api_key = "YOUR_OPENAI_API")
 # print(llm.predict("What is capital of India?"))
 
 chain = LLMChain(llm=llm, prompt=qcity)
